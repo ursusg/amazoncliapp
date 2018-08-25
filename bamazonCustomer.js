@@ -58,7 +58,7 @@ function buyProduct() {
     ]).then((answers) => {
         
 
-        console.log(answers);
+        // console.log(answers);
 
         connection.query("SELECT * FROM products WHERE id=?", [parseInt(answers.id)], (err, res) => {
 
